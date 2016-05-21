@@ -1,0 +1,30 @@
+{
+  "name": "png-compressor",
+  "version": "0.1.0",
+  "description": "Command line PNG optimizer and compressor built on Node.js",
+  "main": "lossly-then-losslessly.js",
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hirako2000/png-compressor.git"
+  },
+  "keywords": [
+    "png",
+    "compressor",
+    "optimizer",
+    "image"
+  ],
+  "author": "hirako2000",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hirako2000/png-compressor/issues"
+  },
+  "homepage": "https://github.com/hirako2000/png-compressor#readme",
+  "dependencies": {
+    "imagemin": "^5.1.2",
+    "imagemin-optipng": "^5.1.0",
+    "imagemin-pngquant": "^5.0.0"
+  }
+}
