@@ -18,5 +18,5 @@ imagemin([source + '/**/*.{jpg,png}'], destination, {
     imageminOptipng({optimizationLevel : 3}) // default level is enough: 16 trial, could bump up to level 7: 240 trials
   ]
 }).then(files => {
-  console.log("Optimized losslessly, find files in " + destination);
+  console.log("Compressed losslessly, find files in " + destination);
 });
