@@ -1,4 +1,7 @@
 # png-compressor
+
+A small suite of tools to compress PNG files in bulk. Eitherlossy, losslessly, or both.
+
 ## Usage
 
 Install deps
