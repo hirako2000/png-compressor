@@ -73,16 +73,19 @@ walk(source, function(err, results) {
       console.log("None");
     }
     for (var j = 0; j < foundUncompressed.length; j++) {
+      var percentDifference = (foundUncompressed[j].size - foundUncompressed[j].compressedSize) / foundUncompressed[j].size * 100;
+      percentDifference = round(percentDifference, 2);
       console.log(foundUncompressed[j].fileName + " is " + foundUncompressed[j].size
-        + " could be " + foundUncompressed[j].compressedSize + " bytes");
+        + " could be " + foundUncompressed[j].compressedSize + " bytes" + " (-" + percentDifference + "%)");
     }
     console.log("====================================");
 
   });
 
-
-
-
 });
 
-
+ var round = function(value, decimals) {
+   // A bit hacky to round to 2 decimal.
+   // I won't pull a library just for that.
+   return Number(Math.round(value + 'e' + decimals) + 'e-' + decimals);
+};
