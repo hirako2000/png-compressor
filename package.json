@@ -23,8 +23,13 @@
   },
   "homepage": "https://github.com/hirako2000/png-compressor#readme",
   "dependencies": {
+    "gm": "^1.22.0",
     "imagemin": "^5.1.2",
+    "imagemin-mozjpeg": "^6.0.0",
     "imagemin-optipng": "^5.1.0",
-    "imagemin-pngquant": "^5.0.0"
+    "imagemin-pngquant": "^5.0.0",
+    "imagemin-zopfli": "^4.2.0",
+    "mkdirp": "^0.5.1",
+    "pngout-bin": "^3.0.0"
   }
 }
